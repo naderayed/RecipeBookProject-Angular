@@ -15,7 +15,7 @@ export class RecipeListComponent implements OnInit {
     new RecipeModel(
       "recipeTwo",
       "Description for recipeTwo",
-      "https://img.taste.com.au/p3Tp-7AU/w643-h428-cfill-q90/taste/2022/09/garlic-chilli-prawn-pasta-181440-1.jpg")
+      "https://www.cookipedia.co.uk/wiki/images/3/39/Shrimp_cakes_-_prawn_balls_recipe.jpg")
   ];
 
   constructor() { }
