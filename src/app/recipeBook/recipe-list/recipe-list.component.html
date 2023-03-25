@@ -3,21 +3,8 @@
     <button class="btn btn-success">New Recipe</button>
   </div>
 </div>
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col"  *ngFor="let item of recipes">
-    <div class="card">
-      <a href="#">
-        <img [src]="item.imagePath" class="card-img-top" alt="image not found">
-      </a>
-      <div class="card-body">
-        <h5 class="card-title">{{item.name}}</h5>
-        <a href="#"><p class="card-text">{{item.description}}</p></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<app-recipe-item></app-recipe-item>
+<app-recipe-item *ngFor="let recipeEl of recipes"
+[recipeInput]="recipeEl"
+(recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>
 
 
