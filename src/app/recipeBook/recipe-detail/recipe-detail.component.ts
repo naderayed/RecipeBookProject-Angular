@@ -1,4 +1,5 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
+import {RecipeModel} from "../recipe.model";
 
 
  @Component({
@@ -7,5 +8,6 @@ import {Component} from "@angular/core";
    styleUrls:["recipe-detail.component.css"]
  })
 export class RecipeDetailComponent{
+   @Input() recipe: RecipeModel;
 
  }
